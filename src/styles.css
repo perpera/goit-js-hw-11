@@ -1,7 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #e8fcff;
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form input[type='text'] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #e2d7d7;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-form input[type='text']:hover,
+.search-form input[type='text']:focus {
+  border: 1px solid #a69e9e;
+}
+
+.search-form button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+  background-color: #7300ff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+}
+
+.info {
+  padding: 10px;
+  background-color: #ecefef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.load-more:hover,
+.load-more:focus {
+  background-color: #7300ff;
 }
